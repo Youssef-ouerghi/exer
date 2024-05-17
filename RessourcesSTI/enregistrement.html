@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page title</title>
+    <link rel="stylesheet" href="mesStyles.css" />
+    <script src="controle.js"></script>
+  </head>
+  <body>
+    <form action="enregistrement.html" onsubmit="return verif1()" method="post">
+      <h3 id="tit3">Enregistrement d'une nouvelle activite</h3>
+      <table>
+        <tr>
+          <td><label for="">section :</label></td>
+          <td>
+            <select name="station" id="station">
+              <option value="0">choisir une station</option>
+              <option value="trot">trozza</option>
+              <option value="zagn">zaghouan</option>
+              <option value="hant">el hania</option>
+              <option value="sdbs">sidi bou said</option>
+            </select>
+          </td>
+          <td><label for="">Nom region :</label></td>
+          <td><input type="text" name="region" id="region" /></td>
+        </tr>
+        <tr>
+          <td><label for="">date seisme:</label></td>
+          <td><input type="date" name="dates" id="dates" /></td>
+          <td><label for="">heure sesime:</label></td>
+          <td><input type="time" name="heures" id="heures" /></td>
+        </tr>
+        <tr>
+          <td><label for="">magnitude :</label></td>
+          <td><input type="text" name="magnitude" id="magnitude" /></td>
+        </tr>
+        <tr>
+          <td><label for="">latitude:</label></td>
+          <td><input type="text" name="latitude" id="latitude" /></td>
+        </tr>
+        <tr>
+          <td><label for="">longitude :</label></td>
+          <td><input type="text" name="longitude" id="longitude" /></td>
+        </tr>
+        <tr>
+          <td colspan="4" align="right">
+            <input type="reset" value="annuler" id="bt1" name="bt1" />
+            <input type="submit" value="enregistrer" id="bt2" name="bt2" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
